@@ -1,0 +1,13 @@
+{
+    "model": "ResNet18",
+    "case": "incr_bs_incr_lr",
+    "lr": 0.1,
+    "lr_max": 1.0,
+    "epochs": 300,
+    "batch_size": 8,
+    "bs_max": 4096,
+    "checkpoint_path": "checkpoint/doubly_incr_lr_max1.0.pth.tar",
+    "lr_method": "exp_growth",
+    "bs_delta": 2.0,
+    "incr_interval": 30
+}

@@ -1,0 +1,9 @@
+{
+    "model": "ResNet18",
+    "case": "const_bs_decay_lr",
+    "lr": 0.1,
+    "epochs": 300,
+    "batch_size": 128,
+    "checkpoint_path": "checkpoint/cosine.pth.tar",
+    "lr_method": "cosine"
+}

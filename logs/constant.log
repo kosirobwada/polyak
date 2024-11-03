@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/kosir/workspace/SGD_momentum/cifar100.py", line 3, in <module>
+    import torch.multiprocessing as mp
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/__init__.py", line 1755, in <module>
+    from .functional import *  # noqa: F403
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/functional.py", line 10, in <module>
+    import torch.nn.functional as F
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/nn/__init__.py", line 2, in <module>
+    from .modules import *  # noqa: F403
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/nn/modules/__init__.py", line 28, in <module>
+    from .rnn import RNNBase, RNN, LSTM, GRU, \
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 374, in <module>
+    class RNN(RNNBase):
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 532, in RNN
+    def forward(self, input: Tensor, hx: Optional[Tensor] = None) -> Tuple[Tensor, Tensor]:
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/_jit_internal.py", line 952, in _overload_method
+    _check_overload_body(func)
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/_jit_internal.py", line 868, in _check_overload_body
+    parsed_def = parse_def(func)
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/_sources.py", line 121, in parse_def
+    sourcelines, file_lineno, filename = get_source_lines_and_file(
+  File "/home/kosirowada/.local/lib/python3.10/site-packages/torch/_sources.py", line 24, in get_source_lines_and_file
+    sourcelines, file_lineno = inspect.getsourcelines(obj)
+  File "/usr/lib/python3.10/inspect.py", line 1121, in getsourcelines
+    lines, lnum = findsource(object)
+  File "/usr/lib/python3.10/inspect.py", line 954, in findsource
+    lines = linecache.getlines(file, module.__dict__)
+  File "/usr/lib/python3.10/linecache.py", line 46, in getlines
+    return updatecache(filename, module_globals)
+  File "/usr/lib/python3.10/linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+  File "/usr/lib/python3.10/tokenize.py", line 396, in open
+    encoding, lines = detect_encoding(buffer.readline)
+  File "/usr/lib/python3.10/tokenize.py", line 365, in detect_encoding
+    first = read_or_stop()
+  File "/usr/lib/python3.10/tokenize.py", line 323, in read_or_stop
+    return readline()
+KeyboardInterrupt

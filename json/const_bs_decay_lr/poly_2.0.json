@@ -1,0 +1,10 @@
+{
+    "model": "ResNet18",
+    "case": "const_bs_decay_lr",
+    "lr": 0.1,
+    "epochs": 300,
+    "batch_size": 128,
+    "checkpoint_path": "checkpoint/poly_2.0.pth.tar",
+    "lr_method": "poly",
+    "power": 2.0
+}

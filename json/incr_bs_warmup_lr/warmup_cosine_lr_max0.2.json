@@ -1,0 +1,15 @@
+{
+    "model": "ResNet18",
+    "case": "incr_bs_warmup_lr",
+    "lr": 0.1,
+    "lr_max": 0.2,
+    "epochs": 300,
+    "incr_interval": 30,
+    "warmup_epochs": 30,
+    "warmup_interval": 3,
+    "batch_size": 8,
+    "bs_max": 4096,
+    "checkpoint_path": "checkpoint/warmup_cosine_lr_max0.2.pth.tar",
+    "lr_method": "warmup_cosine",
+    "bs_delta": 2.0
+}
